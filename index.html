@@ -1,18 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "Colegio Universitario Hotel Escuela de Los Andes Venezolanos" # brief name of host site without address (e.g., "Euphoric State University")
+address: "Sector Hoyada de Milla, al lado del Hotel VENETUR, Av Universidad, Mérida"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: ve    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: es   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "8.607483, -71.137856"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Nov 17-18, 2015"  # human-readable date" (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:30 pm"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2015-11-17"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2015-11-18"    # use YYYY-MM-DD format like" 2015-01-02"
+instructor: ["Francisco Palm"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Mariangela Petrizzo"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "francisco.palm@gmail.com"    # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -43,7 +43,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </iframe>
 {% endif %}
 
-<h2>General Information</h2>
+<h2>Información General</h2>
 
 <!--
   INTRODUCTION
@@ -52,20 +52,20 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  La misión de <a href="{{site.swc_site}}">Software Carpentry</a>
+  es ayudar a investigadoras e investigadores arealizar su trabajo en menos
+  tiempo y con menos dolor, enseñándoles destrezas básicas de
+  computación científica. Este taller práctico cubrirá conceptos
+  básicos y herramientas, incluyendo: diseño de programas, control de versiones, gestión
+  de datos y automatización de tareas. Los participantes serán animados a
+  ayudarse mutuamente y a aplicar lo que han aprendido a su propios
+  problemas de investigación.
 </p>
 <p align="center">
   <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+    Para mas información sobre lo que enseñamos y porque,
+    por favor revise nuestro artículo (en inglés)
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Mejores Prácticas para la Computación Científica</a>".
   </em>
 </p>
 
@@ -76,10 +76,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   workshop is only open to people from a particular institution.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+  <strong>Quién:</strong>
+  Este taller está dirigido a estudiantes de postgrado y otros investigadores.
+  <strong>No necesitas tener ningún conocimiento previo de las herramientas
+  que serán presentadas en el taller.</strong>
 </p>
 
 <!--
@@ -92,11 +92,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
+  <strong>Dónde:</strong>
   {{page.address}}.
-  Get directions with
+  Obtener direcciones con
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  o
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -107,11 +107,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Requerimientos:</strong> Los participantes deben traer una laptop con
+  algunas aplicaciones específicas instaladas (listadas
+  <a href="#setup">abajo</a>). También se requiere que cumplan el
+  <a href="{{site.swc_site}}/conduct.html">Código de Conducta</a>
+  de Software Carpentry.
 </p>
 
 <!--
@@ -122,14 +122,14 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   used.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>Contacto</strong>:
+  Por favor escribir a
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  para mas información.
 </p>
 
 <hr/>
@@ -141,29 +141,29 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Horario</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Día 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td>  <td>Automatizando tareas con el terminal Unix</td> </tr>
+      <tr> <td>10:30</td> <td>Café</td> </tr>
+      <tr> <td>12:00</td>  <td>Almuerzo</td> </tr>
+      <tr> <td>13:00</td>  <td>Construyendo programas con Python</td> </tr>
+      <tr> <td>14:30</td>  <td>Café</td> </tr>
+      <tr> <td>16:00</td>  <td>Recapitulación</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Día 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td>  <td>Control de versiones con Git</td> </tr>
+      <tr> <td>10:30</td>  <td>Café</td> </tr>
+      <tr> <td>12:00</td>  <td>Almuerzo</td> </tr>
+      <tr> <td>13:00</td>  <td>Manejando datos con SQL</td> </tr>
+      <tr> <td>14:30</td>  <td>Café</td> </tr>
+      <tr> <td>16:00</td>  <td>Recapitulación</td> </tr>
     </table>
   </div>
 </div>
@@ -186,7 +186,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  Usaremos este Etherpad para chatear, tomar notas, e intercambiar URLs y trozos de código.
 </p>
 {% endif %}
 
@@ -209,44 +209,44 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2>Syllabus</h2>
+<h2>Programa</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>El terminal Unix</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
+      <li>Archivos y directorios</li>
+      <li>Historia y completación con Tab</li>
+      <li>Tuberías y redirección</li>
+      <li>Bucles sobre archivos</li>
+      <li>Crear y ejecutar scrips del terminal</li>
+      <li>Encontrando cosas</li>
+      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Referencia...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Programming in Python</h3>
+    <h3>Programando en Python</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
+      <li>Usando bibliotecas</li>
+      <li>Trabajando con arreglos</li>
+      <li>Leyendo y graficando datos</li>
+      <li>Creando y usando funciones</li>
+      <li>Bucles y condicionales</li>
+      <li>Programación defensiva</li>
+      <li>Usando Python en la línea de comandos</li>
+      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Referencia...</a></li>
     </ul>
   </div>
   <!--
   <div class="col-md-6">
     <h3>Programming in R</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
+      <li>Trabajando con vectores y data frames</li>
+      <li>Leyendo y graficando datos</li>
+      <li>Creando y usando funciones</li>
+      <li>Bucles y condicionales</li>
+      <li>Utilizando R desde la línea de comandos</li>
+      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Referencia...</a></li>
     </ul>
   </div>
   -->
@@ -267,31 +267,31 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Version Control with Git</h3>
+    <h3>Control de versiones con Git</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
+      <li>Creando un Repositorio</li>
+      <li>Registrando cambios a los archivos: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Revisar cambios: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignorando archivos</li>
+      <li>Trabajando en la web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolviendo conflictos</li>
+      <li>Licencias abiertas</li>
+      <li>Dónde hospedar, cómo y porqué</li>
+      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Referencia...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Manejando datos con SQL</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
+      <li>Leyendo y ordenando datos</li>
+      <li>Filtrando con <code>where</code></li>
+      <li>Calculatando nuevos valores sobre la marcha</li>
+      <li>Manejando valores faltantes</li>
+      <li>Combinando valores usando agregación</li>
+      <li>Combinando información de distantas tables usando<code>join</code></li>
+      <li>Creando, modificando y borrando datos</li>
+      <li>Programando con bases de datos</li>
+      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Referencia...</a></li>
     </ul>
   </div>
 </div>
@@ -310,75 +310,75 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   'tools/check' as well.
 -->
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Configuración</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
+  Para participar en el taller de Software Carpentry, necesitará
+  acceder al software que se describe a continuación. Además,
+  necesitará un navegador web actualizado.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Mantenemos una lista de problemas comunes que se producen durante la instalación como referencia para instructores
+  que pueden ser útiles en la
+  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Wiki de problemas de Configuración y Soluciones</a>.
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+  <h3>El terminal Bash</h3>
 
   <p>
-    Bash is a commonly-used shell that gives you the power to do simple
-    tasks more quickly.
+    Bash es un terminal muy usado que te da el poder de hacer
+    tareas sencillas más rápidamente.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <ol>
-        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-        <li>Run the installer and follow the steps bellow:
+        <li>Descargar Git para Windows <a href="https://git-for-windows.github.io/">instalador</a>.</li>
+        <li>Ejecuta el instalado y sigue los pasos abajo:
           <ol>
             <!-- Git 2.6.1 Setup -->
             <!-- Welcome to the Git Setup Wizard -->
-            <li>Click on "Next".</li>
+            <li>Hacer Clic en "Siguiente".</li>
             <!-- Information -->
-            <li>Click on "Next".</li>
+            <li>Hacer Clic en "Siguiente".</li>
             <!-- Select Destination Location -->
-            <li>Click on "Next".</li>
+            <li>Hacer Clic en "Siguiente".</li>
             <!-- Select Components -->
-            <li>Click on "Next".</li>
+            <li>Hacer Clic en "Siguiente".</li>
             <!-- Select Start Menu Folder -->
-            <li>Click on "Next".</li>
+            <li>Hacer Clic en "Siguiente".</li>
             <!-- Adjusting your PATH environment -->
             <li>
               <strong>
-                Select "Use Git from the Windows Command Prompt" and click on "Next".
+                Seleccione "Utilice Git desde la La línea de Comandos de Windows" y haga clic en "Siguiente".
               </strong>
-                If you forgot to do this programs that you need for the workshop will not work properly.
-                If this happens rerun the installer and select the appropriate option.
+                Si olvidas hacer esto los programas que necesitas en el taller no correrán apropiadamente.
+                Si esto ocurre vuelva a ejecutar el instalador y seleccione la opción apropiada.
             </li>
             <!-- Configuring the line ending conversions -->
             <li>
-              Click on "Next".
+              Haga clic en "Siguiente".
               <strong>
-                Keep "Checkout Windows-style, commit Unix-style line endings" selected.
+                Manten seleccionado "Checkout Windows-style, commit Unix-style line endings".
               </strong>
             </li>
             <!-- Configuring the terminal emulator to use with Git Bash -->
             <li>
               <strong>
-                Select "Use Windows' default console window" and click on "Next".
+                Seleccione "Use Windows' default console window" y haga clic en "Next".
               </strong>
             </li>
             <!-- Configuring experimental performance tweaks -->
-            <li>Click on "Next".</li>
+            <li>Haga clic en "Next".</li>
             <!-- Installing -->
             <!-- Completing the Git Setup Wizard -->
-            <li>Click on "Finish".</li>
+            <li>Haga clic en "Finish".</li>
           </ol>
         </li>
       </ol>
-      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+      <p>Esto te proveerá Git y Bash en la aplicación Git Bash.</p>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
@@ -467,7 +467,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <h4 id="editor-windows">Windows</h4>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it, 
+        To install it,
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
